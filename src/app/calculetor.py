@@ -56,7 +56,7 @@ def handle_answer(message):
 
     # Check if the user has started the quiz
     if user_id not in user_data:
-        bot.reply_to(message, "Please start the quiz with /start.")
+        bot.reply_to(message, "Please start quiz with /start.")
         return
 
     question_index = user_data[user_id]["question_index"]
